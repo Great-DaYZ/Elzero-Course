@@ -1,0 +1,112 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid {
+  background-color: hsl(0, 0%, 87%);
+  padding: 150px;
+  display: grid;
+  grid-template-areas:
+    "zeroo zeroo one two"
+    "three four four two"
+    "three five five two"
+    "six seven eight nine";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 20px;
+}
+
+
+
+.grid div {
+  background-color: #ffffff;
+  color: black;
+  border-bottom: #fe6130 5px solid;
+  padding: 0px 20px;
+  font-size: large;
+  font-weight: 999;
+  position: relative;
+}
+
+img {
+  height: 70px;
+  opacity: 0.2;
+  transition-duration: 0.7s;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h4 {
+  margin-top: -20px;
+  color: #727674;
+  font-size: large;
+}
+
+h5 {
+  font-size: 1.17em;
+  font-weight: 100;
+  padding: 0px;
+  padding-right: 20px;
+}
+
+.grid .page2,
+.grid .page4,
+.grid .page7 {
+  background-color: black;
+  color: white;
+}
+
+.page0 {
+  grid-area: zeroo;
+}
+
+
+.page1 {
+  grid-area: one;
+}
+
+
+.grid .page2 {
+  grid-area: two;
+}
+
+.page3 {
+  grid-area: three;
+}
+
+.page4 {
+  grid-area: four;
+}
+
+.page5 {
+  grid-area: five;
+}
+
+.page6 {
+  grid-area: six
+}
+
+.page7 {
+  grid-area: seven
+}
+
+.page8 {
+  grid-area: eight
+}
+
+.grid div:hover img {
+  opacity: 1;
+  transform: scale(1.12);
+}
+
+.grid div::after {
+  content: '"';
+  position: absolute;
+  right: 25px;
+  bottom: 2px;
+  opacity: 0.2;
+  transform: scale(1.9, 3.6) rotate(15deg);
+}

@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: #eeee;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 50px auto;
+    font-weight: 600;
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 200px;
+}
+
+div::before {
+    content: "";
+    border-bottom: #2196f3 10px solid;
+    border-top: #2196f3 10px solid;
+    border-left: #2196f3 10px solid;
+    border-right: #ffffff 10px solid;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    z-index: 1;
+    transition: 0.5s 0.5s;
+    scale: 1.1;
+}
+
+div::after {
+    content: "";
+    border-bottom: #e91e63 10px solid;
+    border-top: #e91e63 10px solid;
+    border-right: #e91e63 10px solid;
+    border-left: #ffffff 10px solid;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+div:hover::before {
+    transform: rotate(360deg);
+}
+div:hover::after {
+    transform: rotate(360deg);
+}
