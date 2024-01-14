@@ -1,0 +1,44 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainBorder: 8px;
+}
+
+h1 {
+    background-color: #009688;
+    color: white;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: var(--mainBorder);
+}
+
+/* 
+3 = ScaleX
+0.2679 = SkewY
+0 = SkewX
+3 = ScaleY
+20 = TranslateX
+100 = TranslateY
+*/
+
+h1::after {
+    content: "Matrix(3, 0.2679, 0, 3, 20, 100)";
+    background-color: black;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: var(--mainBorder);
+    transition: 0.7s;
+}
+
+h1:hover::after {
+    background-color: #e91e63;
+    box-shadow:0px 0px 15px 5px #e91e63;
+} 

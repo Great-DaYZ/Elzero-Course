@@ -1,0 +1,38 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    padding: 0px;
+} 
+
+div {
+    background-color: #607d8b;
+    width: 282px;
+    height: 250px;
+    margin: 200px auto;
+    border-bottom: 9px solid black;
+    position: relative;
+
+}
+
+div::before{
+    content: "";
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 38px;
+    bottom: 150px;
+    rotate: 45deg;
+}
+
+div::after{
+    content: "Elzero";
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
