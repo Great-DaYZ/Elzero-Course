@@ -1,0 +1,53 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+div{
+    color: black;
+    background-color: black;
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 1s 0.1s ;
+    perspective: 800px;
+    transform-origin: right center;
+    /* transform: translate(-50%,-50%); */
+}
+div::before {
+    content: "Front";
+    background-color: #e91e63;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+}
+div::after {
+    content: "back";
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -99;
+    position: absolute;
+    transform: rotatey(180deg)
+
+}
+
+div:hover{
+    transform: translateX(-100%) rotatey(-180deg);
+}
+
