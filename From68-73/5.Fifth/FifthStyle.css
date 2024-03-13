@@ -2,7 +2,8 @@ body {
     padding: 0;
     margin: 0;
 }
-div{
+
+div {
     color: black;
     background-color: black;
     margin: 50px auto;
@@ -11,12 +12,11 @@ div{
     position: relative;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: transform 1s 0.1s ;
+    transition: transform 1s 0.1s;
     perspective: 800px;
-    transform-origin: right center;
-    /* transform: translate(-50%,-50%); */
 }
-div::before {
+
+.width::before {
     content: "Front";
     background-color: #e91e63;
     color: white;
@@ -30,7 +30,8 @@ div::before {
     position: absolute;
 
 }
-div::after {
+
+.width::after {
     content: "back";
     background-color: #2196f3;
     color: white;
@@ -44,10 +45,43 @@ div::after {
     z-index: -99;
     position: absolute;
     transform: rotatey(180deg)
+}
+
+.height::before {
+    content: "Front";
+    background-color: #e91e63;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 
 }
 
-div:hover{
-    transform: translateX(-100%) rotatey(-180deg);
+.height::after {
+    content: "back";
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -99;
+    position: absolute;
+    transform: rotatex(180deg)
 }
 
+.width:hover {
+    transform: rotatey(-180deg);
+}
+
+.height:hover {
+    transform: rotatex(-180deg);
+}
