@@ -1,0 +1,25 @@
+body {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+span {
+    background-color: #dbdbe5;
+    border: 5px solid rgb(8, 7, 7);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 50% auto;
+    width: 50px;
+    height: 50px;
+    display: block;
+    animation: test 1s reverse linear infinite;
+
+}
+
+@keyframes test {
+    100% {
+        transform: rotate(1turn);
+    }
+
+
+}
