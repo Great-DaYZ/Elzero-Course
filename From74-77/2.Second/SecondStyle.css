@@ -1,3 +1,8 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 div {
     border: 4px solid;
     background-color: transparent;
@@ -20,7 +25,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
  .blue {
@@ -32,7 +37,6 @@ div {
     animation: bluee 1.9s linear infinite normal;
     animation-play-state: paused;
     position: absolute;
-    /* translate: 5% 5%; */
     align-items: center;
 }
 
@@ -48,7 +52,6 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 32px 0 0 32px; */
 }
 
 
