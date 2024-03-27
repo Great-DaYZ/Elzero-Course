@@ -55,7 +55,16 @@ div {
     height: 33px;
     margin: 10px;
     margin-left: 20px;
-    animation: item 10s linear forwards;
+    animation: item 3s 3s linear;
+}
+
+.item-8 {
+    background-color: #fea604;
+    grid-area: 7 / 15 / 9 / 15;
+    width: 36px;
+    height: 33px;
+    margin: 10px 10px 0 -10px;
+    animation: slide 3s 0s linear forwards;
 }
 
 @keyframes item {
@@ -80,13 +89,50 @@ div {
     }
 
     80% {
-        transform: translate(-3px , 320px )
-        
+        transform: translate(-3px, 320px)
     }
-    
 
-    100% {
+    90% {
         transform: translate(-173px, 320px);
 
+    }
+
+    95% {
+        transform: translate(-173px, 0px);
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+
+    }
+
+}
+
+@keyframes slide {
+    20% {
+        transform: translate(-173px);
+    }
+
+    39% {
+        transform: translate(-173px, -300px);
+        opacity: 1;
+
+    }
+
+    40%,
+    50%,
+    60%,
+    70% {
+        transform: translate(-173px, -320px);
+    }
+    80% {
+        opacity: 0.2;
+    }
+    90%,
+    95%,
+    100% {
+        transform: translate(-173px, -320px);
+        opacity: 0;
     }
 }
