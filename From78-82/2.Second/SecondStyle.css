@@ -1,9 +1,9 @@
 p, div{
     margin: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
+    font-weight: 600;
 }
-div.main-red {
+.parent > .child:last-child  {
     color: red;
 }
 
