@@ -13,11 +13,6 @@ div ~ div {
     border-top: black solid 3px;
 }
 
-/* div :not(.no-need > div, :last-child :nth-child(2)):nth-child(3), div :nth-child(4):not(.no-need > div, :nth-child(3)), div :not(.no-need, :last-child ):nth-child(3) {
-    color: red;
-} */
-
 div:not(:nth-child(2)) :not(:last-child, .no-need div):nth-child(3), div :not(:last-child , .no-need div , :nth-child(3)):nth-child(4){
     color: red;
 }
-.no-need div
