@@ -9,9 +9,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 550;
 }
-div ~ div {
-    border-top: black solid 3px;
-}
 
 div:not(:nth-child(2)) :not(:last-child, .no-need div):nth-child(3), div :not(:last-child , .no-need div , :nth-child(3)):nth-child(4){
     color: red;
