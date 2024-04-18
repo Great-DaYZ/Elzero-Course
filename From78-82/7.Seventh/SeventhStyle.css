@@ -1,0 +1,16 @@
+body {
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0%;
+    padding-left: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+div:not(:nth-child(3)):not(:nth-child(2)) :not( .no-need div , .no-need-2 div):nth-child(5){
+    color: red;
+}
