@@ -21,7 +21,6 @@ div.assign-one{
 @media print {
     div.assign-one {
         font-size: 40px;
-        /* margin-top: 50px; */
         width: 100%;
     }
     
