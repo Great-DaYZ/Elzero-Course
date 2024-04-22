@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.assign-one{
+    background-color: #03a9f4;
+    color: aliceblue;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 550;
+    font-size: 15px;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+@media print {
+    div.assign-one {
+        font-size: 40px;
+        /* margin-top: 50px; */
+        width: 100%;
+    }
+    
+}
