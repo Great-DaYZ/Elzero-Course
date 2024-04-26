@@ -4,28 +4,43 @@
 }
 
 .parent {
-    background-color:  #03a9f4; 
+    background-color:  #ce2949; 
+    border-radius: 7px;
     margin: 20px auto;
-    width: 200px;
+    width: 250px;
     padding: 10px;
 }
 .child {
-    background-color: #e91e63;
+    background-color: #582841;
     text-transform: uppercase;
-    margin: 10px;
+    font-weight: 700;
+    font-family: Georgia, serif;
+    border-radius: 7px;
+    margin: 10px auto;
     padding: 10px;
-    color: azure;
+    color: white;
     display: inline-block;
 }
 
 .center-flex {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 .center-position {
     position: absolute;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
