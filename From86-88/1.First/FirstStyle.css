@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.parent {
+    background-color:  #03a9f4; 
+    margin: 20px auto;
+    width: 200px;
+    padding: 10px;
+}
+.child {
+    background-color: #e91e63;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+    color: azure;
+    display: inline-block;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
